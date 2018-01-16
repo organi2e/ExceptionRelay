@@ -21,7 +21,7 @@
 		if ( error )
 			*error = [NSError errorWithDomain:[exception name] code:0 userInfo:userInfo];
 		return NO;
-	} @catch (const NSObject * const object) {
+	} @catch (id const object) {
 		if ( error )
 			*error = [NSError errorWithDomain:@"genericObject" code:0 userInfo: [NSDictionary dictionaryWithObject:object forKey:@"object"]];
 		return NO;
