@@ -1,5 +1,5 @@
 # About this
-A framework to catch @objc exception in swift
+A framework for swift to catch @objc exceptions
 
 ## Example
 ```
