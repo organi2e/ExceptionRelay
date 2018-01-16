@@ -10,7 +10,7 @@ import XCTest
 import ExceptionRelay
 
 class ExceptionRelayTests: XCTestCase {
-    func testRaise() {
+	func testRaise() {
 		do {
 			try exceptionable {
 				NSException(name: .invalidArgumentException, reason: "a reason", userInfo: nil).raise()
@@ -19,7 +19,7 @@ class ExceptionRelayTests: XCTestCase {
 		} catch let error as NSError {
 			XCTAssert(NSExceptionName(error.domain) == .invalidArgumentException)
 		}
-    }
+	}
 	func testArray() {
 		do {
 			try exceptionable {
@@ -31,3 +31,4 @@ class ExceptionRelayTests: XCTestCase {
 		}
 	}
 }
+

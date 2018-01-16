@@ -16,3 +16,4 @@ public func exceptionable(block: ()->()) throws {
 	}
 	try(Class as AnyObject).relayException(try: block)
 }
+
